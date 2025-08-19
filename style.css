@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     margin: 10px auto;
     padding: 10px;
-    background: url('./images/LDC4.jpeg') no-repeat center center fixed;
+    background: url('./images/LDC4.jpeg') no-repeat fixed;
     min-width: 30vh;
 }
 main {
