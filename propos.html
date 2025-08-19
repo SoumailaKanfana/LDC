@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>À propos - Soumaïla Kanfana</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -10,55 +11,105 @@
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #0a1a3c, #004aad);
       color: white;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+
     header {
       padding: 30px 20px;
+      text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 32px;
     }
+
+    header p {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
     section {
-      margin: 40px auto;
-      width: 85%;
+      flex: 1;
+      margin: 30px auto;
+      width: 90%;
       max-width: 800px;
       background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
+      padding: 25px 30px;
       border-radius: 15px;
       text-align: left;
+      line-height: 1.8;
+      font-size: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
+
     h2 {
       font-size: 24px;
       margin-bottom: 15px;
       text-align: center;
     }
-    p {
-      line-height: 1.8;
-      font-size: 16px;
-    }
+
     .bio-card {
-      margin: 40px auto;
-      width: 80%;
+      margin: 30px auto;
+      width: 85%;
       max-width: 500px;
       background: rgba(255, 255, 255, 0.15);
       padding: 20px;
       border-radius: 15px;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
+
     .bio-card h3 {
       margin: 0;
       font-size: 22px;
     }
+
     .bio-card p {
       margin: 10px 0;
       font-size: 15px;
     }
+
     footer {
-      margin-top: 40px;
       padding: 15px;
       background: rgba(0,0,0,0.4);
       font-size: 14px;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 28px;
+      }
+      header p {
+        font-size: 16px;
+      }
+      section {
+        padding: 20px;
+      }
+      .bio-card {
+        width: 90%;
+        padding: 18px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 24px;
+      }
+      section {
+        padding: 15px;
+        font-size: 15px;
+      }
+      .bio-card h3 {
+        font-size: 20px;
+      }
+      .bio-card p {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -96,7 +147,7 @@
   </section>
 
   <footer>
-    <p>© 2025 - Soumaila KANFANA-2025</p>
+    <p>© 2025 - Soumaila KANFANA</p>
   </footer>
 
 </body>

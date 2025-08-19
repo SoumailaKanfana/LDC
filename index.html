@@ -1,81 +1,189 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>LDC 2025-2026</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LDC 2025-2026 - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('./images/LDC4.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 128, 0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header img {
+      width: 150px;
+      height: auto;
+      margin-top: 15px;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .intro {
+      max-width: 800px;
+      text-align: center;
+      background: rgba(0, 0, 128, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .links a {
+      display: block;
+      padding: 12px 25px;
+      background: #0217cffd;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #010d50;
+    }
+
+    .previous-editions {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .edition {
+      background: rgba(0, 0, 128, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .edition img {
+      width: 200px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .edition p {
+      flex: 1;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.5);
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 24px;
+      }
+      .edition {
+        flex-direction: column;
+        text-align: center;
+      }
+      .edition img {
+        width: 70%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 20px;
+      }
+      .links a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>UEFA CHAMPIONS LEAGUE 2025-2026</h1>
-        <img src="./images/LDC1.png" alt="Logo LDC">
-    </header>
-    <main>
-        <p>Bienvenue sur la page idéale pour suivre toutes les news sur la LDC 2025-2026</p>
-        <div>
-         <a href="barrages.html">Barrages Infos</a>
-         <a href="tirages.html">Tirages</a>
-          <a href="clubs.html">Clubs Infos</a>
-         <a href="prono.html">Votre prono</a>
-         <a href="propos.html">A propos</a>
-        </div>
-        <h3>Ligue Des Champions 2022-2023</h3>
-        <section>
-            <p>
-    Champion : Manchester City 🏆 (1er titre)
-    Finale : City 1‑0 Inter Milan (but de Rodri, 68ᵉ)
-    Lieu : Istanbul, 10 juin 2023 <br>
-    Faits marquants :
-         <ul>
-        <li>City réalise un triplé historique (Champions League + Premier League + FA Cup)
-       <li>Haaland : 12 buts, meilleur buteur
-        <li>Rodri élu joueur de la finale
-        <li>Victoire éclatante en demi-finale : 4‑0 contre le Real Madrid</li>
-         </ul> 
-          <div>
-        <img src="./images/CITYY.jpg" alt="City parcours">
+
+  <header>
+    <h1>UEFA Champions League 2025-2026</h1>
+    <img src="./images/LDC1.png" alt="Logo LDC">
+  </header>
+
+  <main>
+    <div class="intro">
+      <p>Bienvenue sur la page idéale pour suivre toutes les news et pronostics sur la LDC 2025-2026 !</p>
     </div>
-    </p>
-        </section>
-        <section>
-            <h3>Ligue Des Champions 2023-2024</h3>
-            <p>
-    Champion : Real Madrid 🏆 (15ᵉ titre)
-    Finale : Real 2‑0 Dortmund (Carvajal 74ᵉ, Vinícius 83ᵉ)
-    Lieu : Wembley, 1er juin 2024 <br>
-    Faits marquants :
-    <ul>
-        <li>Real termine invaincu (9 victoires, 4 nuls)</li>
-        <li>Ancelotti : 5ᵉ titre en tant qu’entraîneur</li>
-        <li>Dernière édition avec l'ancien format à 32 équipes</li>
-        <li>Nouveau format à 36 équipes lancé dès 2024‑25</li>
-    </ul>
-     <div>
-        <img src="./images/REAL LDC.jpg" alt="Real Madrid parcours">
+
+    <div class="links">
+      <a href="barrages.html">Barrages Infos</a>
+      <a href="tirages.html">Tirages</a>
+      <a href="clubs.html">Clubs Infos</a>
+      <a href="prono.html">Votre prono</a>
+      <a href="propos.html">À propos</a>
     </div>
-    </p>
-        </section>
-        <section>        
-            <h3>Ligue Des Champions 2024-2025</h3>
-            <section>
-                <p>
-                    (70ᵉ édition, nouveau format à 36 équipes) <br>
-Champion : Paris Saint-Germain 🏆 (1er titre)
-Le PSG a remporté la Ligue des Champions 2024‑25 en écrasant l’Inter Milan 5‑0 en finale à Munich, le 31 mai 2025. C’est le tout premier titre européen de son histoire. Désiré Doué, auteur d’un doublé, a été élu homme du match à seulement 19 ans. Cette victoire marque aussi un triplé historique pour le club parisien (C1, championnat, coupe). C’était la première édition avec le nouveau format à 36 équipes. <br>
-    Faits marquants :
-    <ul>
-        <li>PSG remporte sa première Ligue des champions, devenant le 23ᵉ club à réaliser cet exploit.</li>
-        <li>Plus large victoire jamais vue en finale de C1.</li>
-        <li>PSG décroche ainsi le treble (Championnat, Coupe nationale, Ligue des Champions), une première pour un club français</li>
-        <li>Le nouveau format avec 36 équipes est pleinement appliqué dès cette saison, incluant 8 matches par équipe en phase de ligue des champions.</li>
-    </ul>
-    <div>
-        <img src="./images/PSG LDC.jpg" alt="PSG parcours">
+
+    <div class="previous-editions">
+      <div class="edition">
+        <img src="./images/CITYY.jpg" alt="Manchester City 2022-2023">
+        <p>
+          <strong>Ligue des Champions 2022-2023 :</strong> Manchester City remporte son 1er titre après une finale gagnée 1‑0 contre Inter Milan. Triplé historique (C1 + Premier League + FA Cup). Haaland meilleur buteur (12 buts).
+        </p>
+      </div>
+
+      <div class="edition">
+        <img src="./images/REAL LDC.jpg" alt="Real Madrid 2023-2024">
+        <p>
+          <strong>Ligue des Champions 2023-2024 :</strong> Real Madrid sacré (15ᵉ titre) après une victoire 2‑0 contre Dortmund. Dernière édition à 32 équipes avant le passage au nouveau format 36 équipes.
+        </p>
+      </div>
+
+      <div class="edition">
+        <img src="./images/PSG LDC.jpg" alt="PSG 2024-2025">
+        <p>
+          <strong>Ligue des Champions 2024-2025 :</strong> Paris Saint-Germain remporte son 1er titre européen en écrasant l’Inter 5‑0 en finale. Triplé historique PSG : C1, championnat, coupe nationale.
+        </p>
+      </div>
     </div>
-         </p>
-            </section>
-    </main>
-    <footer>&copy Soumaila KANFANA-2025</footer>
+  </main>
+
+  <footer>
+    © 2025 - Soumaila KANFANA
+  </footer>
+
 </body>
 </html>

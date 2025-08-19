@@ -1,58 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>Barrages</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barrages LDC 2025-2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('./images/LDC4.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 128, 0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    section {
+      width: 90%;
+      max-width: 900px;
+      background: rgba(0, 0, 128, 0.6);
+      padding: 20px;
+      border-radius: 12px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .clubs {
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.5);
+      font-size: 14px;
+    }
+
+    a.retour {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #0217cffd;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    a.retour:hover {
+      background: #010d50;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 24px;
+      }
+      section {
+        width: 95%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 20px;
+      }
+      a.retour {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Informations sur les barrages de la LDC 25-26</h1>
-    </header>
-    <main>
-        <p>
-            Les barrages de la Ligue des Champions 2025-2026 représentent la dernière étape avant l’entrée dans la nouvelle phase de ligue à 36 clubs. <br>
-             Cette phase décisive réunit des clubs issus de deux voies distinctes : la voie des champions, réservée aux vainqueurs de championnats nationaux n’ayant pas obtenu de qualification directe, et la voie de la ligue, qui regroupe des clubs non-champions issus des grandes ligues européennes. <br>
-Le tirage au sort a eu lieu le 4 août 2025 à Nyon. Les matchs aller sont programmés les 19 et 20 août, tandis que les matchs retour auront lieu les 26 et 27 août.
-Dans la voie des champions, quatre clubs sont déjà assurés de disputer les barrages : Bodø/Glimt (Norvège), Celtic FC (Écosse), FC Basel (Suisse) et Sturm Graz (Autriche). Ces équipes seront rejointes par six autres formations issues du troisième tour de qualification. Parmi les clubs encore en lice pour les rejoindre figurent : Malmö FF, FC Copenhagen, Lech Poznań, Crvena Zvezda, Ludogorets, Ferencváros, Dynamo Kyiv, Pafos, Shkëndija, Qarabağ, Kairat et Slovan Bratislava. <br>
-Dans la voie de la ligue, les barrages opposeront les vainqueurs des duels du troisième tour. On y retrouvera potentiellement des clubs comme OGC Nice ou Benfica, qui pourraient affronter Feyenoord ou Fenerbahçe. De l’autre côté du tableau, Salzburg ou Club Brugge pourraient croiser la route de Rangers ou Viktoria Plzeň.
-Au total, sept clubs issus de ces barrages obtiendront leur billet pour la phase principale, où les attendent déjà 29 équipes qualifiées d’office, issues des meilleures ligues européennes selon le nouveau format UEFA.
-Cette édition des barrages s’annonce particulièrement disputée, avec des clubs historiques et des outsiders ambitieux en quête d’une place parmi l’élite du football européen.
-        </p>
-        <section>
-            <p>
-                <h3>Voie des champions (Champions Path)</h3>
-<b><u>Matchs confirmés : </u></b><br>
-    Ludogorets (ou Ferencváros) vs Shkëndija ou Qarabağ <br>
-    Lech Poznań ou Crvena Zvezda vs Dynamo Kyiv ou Pafos <br>
-    Bodø/Glimt vs Sturm Graz <br>
-    Celtic FC vs Kairat Almaty ou Slovan Bratislava <br>
-    FC Basel vs Malmö FF ou FC Copenhagen <br>
-            </p>
-        </section>
-        <section>
-            <p>
-                <h3>Voie de la ligue (League Path)</h3>
-<b><u>Affiches fixées : </u></b><br>
-    Feyenoord ou Fenerbahçe vs OGC Nice ou Benfica <br>
-    Rangers FC ou Viktoria Plzeň vs FC Salzburg ou Club Brugge <br>
-            </p>
-        </section>
-        <section>
-            <p>
-                <h3>Matchs potentiels selon les issues du 3ᵉ tour</h3>
-    Ludogorets vs Shkëndija ou Qarabağ : reste à définir selon le vainqueur du troisième tour. <br>
-    Lech Poznań vs Dynamo Kyiv / Pafos <br>
-    Basel vs Malmö ou Copenhague <br>
-    Celtic vs Kairat ou Slovan Bratislava <br>
-    Ludogorets ou Ferencváros vs Shkëndija ou Qarabağ <br>
-    <b><u>Dans la voie de la ligue : </u></b><br>
-        Nice ou Benfica affronteront Feyenoord ou Fenerbahçe <br>
-        Rangers ou Plzeň défieront Salzburg ou Club Brugge <br>
-            </p>
-        </section>
-    </main>   
-    <footer>&copy Soumaila KANFANA-2025</footer>
+
+  <header>
+    <h1>Barrages Ligue des Champions 2025-2026</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Présentation des barrages</h2>
+      <p>
+        Les barrages de la Ligue des Champions 2025-2026 sont la dernière étape avant la phase principale à 36 clubs.
+        Cette phase réunit les clubs de la voie des champions (vainqueurs de championnats non qualifiés directement) 
+        et de la voie de la ligue (clubs non-champions issus des grandes ligues européennes).
+      </p>
+      <p>
+        Le tirage a eu lieu le 4 août 2025 à Nyon. Les matchs aller : 19 et 20 août, retour : 26 et 27 août.
+        Au total, sept clubs des barrages rejoindront les 29 équipes déjà qualifiées.
+      </p>
+    </section>
+
+    <section>
+      <h2>Voie des champions</h2>
+      <ul class="clubs">
+        <li>Bodø/Glimt vs Sturm Graz</li>
+        <li>Celtic FC vs Kairat Almaty ou Slovan Bratislava</li>
+        <li>FC Basel vs Malmö FF ou FC Copenhagen</li>
+        <li>Ludogorets / Ferencváros vs Shkëndija ou Qarabağ</li>
+        <li>Lech Poznań / Crvena Zvezda vs Dynamo Kyiv ou Pafos</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Voie de la ligue</h2>
+      <ul class="clubs">
+        <li>Feyenoord ou Fenerbahçe vs OGC Nice ou Benfica</li>
+        <li>Rangers FC ou Viktoria Plzeň vs FC Salzburg ou Club Brugge</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Matchs potentiels selon le 3ᵉ tour</h2>
+      <p>
+        Les rencontres peuvent varier selon les résultats du troisième tour de qualification. 
+        Les clubs de la voie des champions et de la voie de la ligue s'affronteront pour déterminer les 7 qualifiés.
+      </p>
+    </section>
+
+    <a class="retour" href="index.html">⬅ Retour à l’accueil</a>
+  </main>
+
+  <footer>
+    © 2025 - Soumaila KANFANA
+  </footer>
+
 </body>
 </html>
