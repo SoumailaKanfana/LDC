@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Votre Prono - LDC 2025-2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-align: center;
+      background: url('./images/LDC4.jpeg') no-repeat center center fixed;
+    }
+    header {
+      padding: 5px;
+    }
+    main {
+background-color: rgba(0, 0, 255, 0.576);
+}
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+      header p {
+        font-size: 18px;
+        margin-top: 5px;
+      }
+    section {
+      margin: 40px auto;
+      width: 80%;
+      max-width: 600px;
+      background: rgba(0, 0, 255, 0.576);
+      padding: 30px;
+      border-radius: 15px;
+    }
+    h2 {
+      margin-bottom: 5px;
+      font-size: 22px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+    }
+    label {
+      font-weight: 600;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background: #010369d5;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0804fdcc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vos Pronostiques</h1>
+    <p>Partagez vos pronos pour la LDC 2025-2026</p>
+  </header>
+
+  <section>
+    <h2>Faites votre prono</h2>
+    <form action="https://formspree.io/f/xwpqjwjd" method="POST">
+      <label>
+        Votre Nom :
+        <input type="text" name="nom" required>
+      </label>
+      <label>
+        Votre Email :
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Votre Pronostic :
+        <textarea name="prono" rows="4" required></textarea>
+      </label>
+      <button type="submit">Envoyer mon prono</button>
+    </form>
+  </section>
+ <footer>
+    <p>© 2025 - Soumaila KANFANA-2025</p>
+  </footer>
+</body>
+</html>
